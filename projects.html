@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Lab — Sara Tariq</title>
+<meta name="description" content="Case studies in operational analytics, predictive modeling, conversational AI and pricing strategy — including a 91.7% AUC risk ensemble and two deployed AI chatbots.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="progress"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+<div class="aura aura-a" aria-hidden="true"></div>
+
+<div class="page">
+
+  <header class="hdr">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <span class="mark">ST</span>
+        <span>Sara Tariq</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="projects.html" class="on" aria-current="page">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="hdr-id">
+        <span class="av av-32" aria-hidden="true"><img src="assets/headshot.jpg" alt="" onerror="this.remove()">ST</span>
+        <span>
+          <span class="nm">Sara Tariq</span><br>
+          <span class="rl">Project &amp; Program Management</span>
+        </span>
+      </div>
+
+      <div class="hdr-cta">
+        <a class="btn btn-ghost btn-sm" href="index.html">Home</a>
+        <a class="btn btn-primary btn-sm" href="resume.html">Resume</a>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="pagehead">
+      <div class="wrap">
+        <span class="eyebrow">Project Lab</span>
+        <h1>Case studies</h1>
+        <p>Analytics work that ends in a decision, and conversational AI that ends in a deployed, usable product. Select any card for the full problem, approach and result — the two chatbots link to their build documentation, and to the live bots themselves.</p>
+      </div>
+    </section>
+
+    <section class="band" style="padding-top:0">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="chip on" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="Operational Analytics" aria-pressed="false">Operational Analytics</button>
+          <button class="chip" data-filter="Predictive Modeling" aria-pressed="false">Predictive Modeling</button>
+          <button class="chip" data-filter="Conversational AI" aria-pressed="false">Conversational AI</button>
+          <button class="chip" data-filter="Pricing &amp; Strategy" aria-pressed="false">Pricing &amp; Strategy</button>
+        </div>
+
+        <div class="proj-grid" id="lab-grid">
+          <!-- Rendered from the `projects` array in script.js -->
+        </div>
+
+        <div class="card" style="margin-top:34px;padding:24px 26px">
+          <span class="eyebrow">Also available</span>
+          <p style="margin:10px 0 0;color:var(--ink-2);font-size:15.5px;line-height:1.65;max-width:70ch">Deeper write-ups of the client engagements — including the full PepsiCo fleet analysis and the investment reporting automation program — are available on request, along with a detailed work-experience document.</p>
+          <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn btn-primary" href="mailto:tariq15@purdue.edu">Request the detail →</a>
+            <a class="btn btn-ghost" href="resume.html">View resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <p>© <span id="yr">2026</span> Sara Tariq · West Lafayette, Indiana</p>
+      <p><a href="resume.html">View resume</a> · <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ============ CASE STUDY MODAL ============ -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-hd">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h2 id="modal-title">Project</h2>
+        <p class="sub" id="modal-sub"></p>
+      </div>
+      <button class="modal-x" id="modal-close" aria-label="Close case study">✕</button>
+    </div>
+    <div class="modal-bd" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sara Tariq — Project Manager &amp; Business Analyst</title>
+<meta name="description" content="Sara Tariq — Project Manager, Business Analyst and Program Manager. Cross-functional delivery for Fortune 500 programs across manufacturing, consumer goods and energy services, backed by SQL, Python and Power BI.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="progress"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+<div class="aura aura-a" aria-hidden="true"></div>
+<div class="aura aura-b" aria-hidden="true"></div>
+
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <span class="mark">ST</span>
+        <span>Sara Tariq</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hdr-id">
+        <span class="av av-32" aria-hidden="true"><img src="assets/headshot.jpg" alt="" onerror="this.remove()">ST</span>
+        <span>
+          <span class="nm">Sara Tariq</span><br>
+          <span class="rl">Project &amp; Program Management</span>
+        </span>
+      </div>
+
+      <div class="hdr-cta">
+        <a class="btn btn-ghost btn-sm" href="projects.html">Projects</a>
+        <a class="btn btn-primary btn-sm" href="resume.html">Resume</a>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+
+          <!-- left -->
+          <div>
+            <div class="idbadge reveal">
+              <span class="av av-44" aria-hidden="true"><img src="assets/headshot.jpg" alt="" onerror="this.remove()">ST</span>
+              <span>
+                <span class="hi">Hello, I am Sara Tariq</span><br>
+                <span class="orgs">Cummins · Kearney · PepsiCo · Purdue Research Foundation</span>
+              </span>
+            </div>
+
+            <p class="role-line reveal">Project Manager · Business Analyst · Program Manager · Analytics Lead</p>
+
+            <h1 class="reveal">Sara <span class="last">Tariq</span></h1>
+
+            <p class="valueprop reveal" data-fit>Program Delivery, Backed by the Analysis Underneath It</p>
+
+            <p class="lead reveal">Five-plus years leading cross-functional delivery where the schedule and the data model turn out to be the same problem. I run the program, and I build the analysis the decision actually rests on.</p>
+
+            <div class="hero-cta reveal">
+              <a class="btn btn-primary" href="assets/SaraTariq_Resume.pdf" download>↓ Download Resume</a>
+              <a class="btn btn-ghost" href="projects.html">Explore Projects →</a>
+            </div>
+
+            <dl class="stack reveal">
+              <div class="stack-row">
+                <dt>Data &amp; Pipelines</dt>
+                <dd><b>SQL</b> (joins · CTEs · window functions) · <b>Python</b> (Pandas · NumPy) · ETL &amp; transformation · Data quality &amp; validation · Snowflake · Databricks · PySpark · Matillion</dd>
+              </div>
+              <div class="stack-row">
+                <dt>Applied ML</dt>
+                <dd><b>Scikit-learn</b> · XGBoost · LightGBM · SMOTE · SHAP · Forecasting &amp; time series · Monte Carlo simulation · Hypothesis testing · Predictive &amp; classification modeling</dd>
+              </div>
+              <div class="stack-row">
+                <dt>AI · LLMs · Agents</dt>
+                <dd><b>Agentic AI</b> · LangGraph · RAG · Persistent-memory agents · Snowflake Cortex · Neo4j · Azure AI · Computer vision · AI-enabled process automation</dd>
+              </div>
+              <div class="stack-row">
+                <dt>Delivery &amp; BI</dt>
+                <dd><b>Power BI</b> (DAX · Power Query · drill-through) · Tableau · MLflow · GitHub CI/CD · Docker · Kubernetes · Jira · Microsoft Project · Advanced Excel (Power Pivot · VBA)</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- right: snapshot -->
+          <aside class="card snap reveal" aria-label="Candidate snapshot">
+            <div class="snap-hd">
+              <div>
+                <span class="eyebrow">Candidate Snapshot</span>
+                <h2>Proof, at a glance</h2>
+              </div>
+              <span class="av av-64" aria-hidden="true"><img src="assets/headshot.jpg" alt="" onerror="this.remove()">ST</span>
+            </div>
+
+            <div class="tiles">
+              <div class="tile">
+                <div class="n" data-count="5" data-suffix="+">5+</div>
+                <span class="l">Years Experience</span>
+              </div>
+              <div class="tile">
+                <div class="n" data-count="8" data-suffix="+">8+</div>
+                <span class="l">Enterprise Orgs Delivered For</span>
+              </div>
+              <div class="tile">
+                <div class="n" data-count="6" data-suffix="">6</div>
+                <span class="l">Industries Served</span>
+              </div>
+              <div class="tile">
+                <div class="n" data-count="91.7" data-suffix="%" data-decimals="1">91.7%</div>
+                <span class="l">Peak Model AUC</span>
+              </div>
+              <div class="tile">
+                <div class="n" data-count="150" data-suffix="K+">150K+</div>
+                <span class="l">Work Orders Analyzed</span>
+              </div>
+              <div class="tile">
+                <div class="n" data-count="40" data-suffix="%">40%</div>
+                <span class="l">Delivery Acceleration</span>
+              </div>
+            </div>
+
+            <p class="snap-sub">Delivery approach</p>
+            <ul class="approach">
+              <li><b>Establish the trusted data layer first.</b> Cleaning, validation and quality checks across disparate enterprise source systems, before any analysis is believed.</li>
+              <li><b>Run the cadence.</b> Scope definition, dependency reviews, action tracking and proactive risk escalation on a fixed rhythm.</li>
+              <li><b>Deliver to the decision-maker.</b> Executive readouts and self-serve dashboards, not raw model output.</li>
+            </ul>
+
+            <p class="snap-sub">Where the experience spans</p>
+            <div class="inds">
+              <span>Manufacturing &amp; Industrials</span>
+              <span>Consumer Goods &amp; FMCG</span>
+              <span>Energy Services</span>
+              <span>Investment Management</span>
+              <span>Education Technology</span>
+              <span>Corporate Security</span>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROFILE ============ -->
+    <section class="band" id="about">
+      <div class="wrap">
+        <div class="profile-grid">
+          <div class="profile-copy reveal">
+            <span class="eyebrow">Profile</span>
+            <h2 style="font-size:clamp(28px,4.4vw,40px);font-weight:800;letter-spacing:-.032em;line-height:1.12;margin:12px 0 18px">I turn ambiguous problems into systems that run.</h2>
+            <p>Most of the work I have owned has started without a clear system in place. I have worked across investment reporting, business development, operations, and analytics—often where data was fragmented, processes were manual, or decisions lacked a structured analytical foundation. My role has been to bring structure: understand the problem, establish reliable data, build the analysis, and turn it into something people can actually use.</p>
+            <p>That has become the pattern across five-plus years: <b>get to the raw data, establish whether it can be trusted, build the analysis, and put it in front of the person making the decision.</b> I don't see delivery discipline and analytical depth as separate jobs. The strongest solutions require both—the technical work has to be right, and the people, priorities, and execution around it have to work too.</p>
+            <p>Today, I work at the intersection of analytics, AI, and program delivery—coordinating enterprise AI initiatives while building analytical solutions that support operational and strategic decision-making.</p>
+          </div>
+
+          <div class="pillars reveal">
+            <div class="card pillar">
+              <span class="eyebrow">01 — Govern</span>
+              <h3>Portfolio and program governance</h3>
+              <p>Delivery cadence, dependency management, and stakeholder alignment across multi-team programs and enterprise AI project divisions.</p>
+            </div>
+            <div class="card pillar">
+              <span class="eyebrow">02 — Analyze</span>
+              <h3>Operational analytics at scale</h3>
+              <p>SQL and Python against six-figure operational record sets, with the ETL and data-quality layer built first so the numbers hold up in an executive review.</p>
+            </div>
+            <div class="card pillar">
+              <span class="eyebrow">03 — Convert</span>
+              <h3>Decisions, not deliverables</h3>
+              <p>Total-cost-of-ownership models, predictive scoring and self-serve Power BI, framed so a finance or operations leader can act on it the same week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="band" id="projects">
+      <div class="wrap">
+        <div class="shead reveal">
+          <span class="eyebrow">Selected Work</span>
+          <h2>Three projects, one working pattern</h2>
+          <p>Each follows the same sequence: access the raw data, establish whether it can be trusted, build the analysis, put it in front of the decision-maker.</p>
+        </div>
+
+        <div class="proj-grid">
+
+          <article class="card proj reveal">
+            <div class="proj-fig">
+              <img src="assets/project-fleet.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" onerror="this.parentNode.innerHTML='&lt;div class=\'ph\'&gt;Enterprise&lt;small&gt;Asset Cost Analytics&lt;/small&gt;&lt;/div&gt;'">
+            </div>
+            <div class="proj-body">
+              <h3>Fleet Cost &amp; Performance Analytics</h3>
+              <p class="proj-org">Kearney · PepsiCo Equipment Services · Live client engagement</p>
+              <p class="d">Large-scale operational analytics supporting asset performance and cost decisions — ETL and data-quality workflows, predictive analytical models, and interactive dashboards built for business stakeholders.</p>
+              <div class="techbubble">
+                <span class="tl">TECH</span>
+                <span class="tv">SQL · Python · Power BI (DAX) · Advanced Excel · ETL &amp; Data Quality · Predictive Modeling</span>
+              </div>
+              <div class="proj-foot"><a class="proj-link" href="projects.html#p-fleet">Read the case study →</a></div>
+            </div>
+          </article>
+
+          <article class="card proj reveal">
+            <div class="proj-fig">
+              <img src="assets/project-risk.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" onerror="this.parentNode.innerHTML='&lt;div class=\'ph\'&gt;91.7%&lt;small&gt;Peak Model AUC&lt;/small&gt;&lt;/div&gt;'">
+            </div>
+            <div class="proj-body">
+              <h3>Financial Risk Classification</h3>
+              <p class="proj-org">Purdue University · Oct – Dec 2025</p>
+              <p class="d">High-risk cases are rare enough that an accuracy-optimized classifier quietly ignores them. Built an XGBoost and LightGBM ensemble with SMOTE resampling that reached 91.7% AUC and ranked the drivers behind every score.</p>
+              <div class="techbubble">
+                <span class="tl">TECH</span>
+                <span class="tv">Python · XGBoost · LightGBM · SMOTE · Scikit-learn · L1/L2 Regularization</span>
+              </div>
+              <div class="proj-foot"><a class="proj-link" href="projects.html#p-risk">Read the case study →</a></div>
+            </div>
+          </article>
+
+          <article class="card proj reveal">
+            <div class="proj-fig">
+              <img src="assets/project-pricing.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" onerror="this.parentNode.innerHTML='&lt;div class=\'ph\'&gt;100K+&lt;small&gt;Product Records Tested&lt;/small&gt;&lt;/div&gt;'">
+            </div>
+            <div class="proj-body">
+              <h3>Large-Scale Pricing Analysis</h3>
+              <p class="proj-org">Purdue University · Aug – Oct 2025</p>
+              <p class="d">Separated the specifications that genuinely move market valuation from the ones teams assume matter, testing attribute-level effects across 100,000+ product records and converting the survivors into pricing and positioning recommendations.</p>
+              <div class="techbubble">
+                <span class="tl">TECH</span>
+                <span class="tv">Python · Pandas · NumPy · Hypothesis Testing · Exploratory Data Analysis</span>
+              </div>
+              <div class="proj-foot"><a class="proj-link" href="projects.html#p-pricing">Read the case study →</a></div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top:26px" class="reveal">
+          <a class="btn btn-ghost" href="projects.html">Open the full project lab →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="band" id="experience">
+      <div class="wrap">
+        <div class="shead reveal">
+          <span class="eyebrow">Professional Experience</span>
+          <h2>Delivery across manufacturing, consumer goods and energy</h2>
+        </div>
+
+        <div class="tl">
+
+          <div class="tl-item reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Portfolio Project Manager, Analytics &amp; AI · <span class="co">Cummins</span></h3>
+                <span class="tl-meta">Sep 2026 – Present · West Lafayette, IN</span>
+              </div>
+              <p class="tl-sum">Primary interface between Purdue and Cummins stakeholders, supporting governance and delivery across a portfolio of enterprise analytics and AI initiatives.</p>
+              <ul>
+                <li>Leading <b>portfolio governance across multiple AI-focused project teams</b> — delivery cadence, dependency tracking and risk management across enterprise technology initiatives.</li>
+                <li>Translating enterprise stakeholder requirements into <b>scoped, trackable workstreams</b>, and holding technical teams to established milestones and review cycles.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Analytics Project Lead · <span class="co">Kearney</span></h3>
+                <span class="tl-meta">Jan 2026 – Present · United States (Remote)</span>
+              </div>
+              <p class="tl-sum">Multi-phase industry analytics engagement covering equipment performance, lifecycle analytics and operational decision support.</p>
+              <ul>
+                <li>Led a <b>cross-functional analytics team</b> through a multi-phase engagement, owning scope definition, delivery cadence, action tracking and risk management alongside Kearney advisors.</li>
+                <li>Built <b>scalable SQL workflows</b> that transformed large operational datasets into standardized KPIs and decision-support reporting.</li>
+                <li>Developed <b>total-cost-of-ownership analytics and gradient-boosted predictive models</b>, delivered through interactive Power BI dashboards with DAX measures and drill-through pages.</li>
+                <li>Partnered with <b>finance and operations stakeholders</b> to define KPIs, validate analytical assumptions and translate technical findings into executive-ready business recommendations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Project Manager · <span class="co">Purdue Research Foundation</span></h3>
+                <span class="tl-meta">Aug 2025 – Present · West Lafayette, IN</span>
+              </div>
+              <p class="tl-sum">Office of Investments — investment reporting pipeline automation, replacing a manual reporting process end to end.</p>
+              <ul>
+                <li>Managed a multi-team program across <b>Database, Parsing, API, Front End and Finance sub-teams</b>, establishing the operating cadence, requirements documentation and dependency reviews that replaced manual reporting with automated pipelines.</li>
+                <li>Owned cross-team stakeholder alignment and technical review, holding five workstreams to one delivery schedule.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item past reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Senior Business Analyst · <span class="co">LearnOBots</span></h3>
+                <span class="tl-meta">May 2022 – Nov 2024 · Islamabad, Pakistan</span>
+              </div>
+              <p class="tl-sum">Analytics and operations for a STEM education technology company, across B2B, institutional and government segments.</p>
+              <ul>
+                <li>Owned delivery of the customer profitability and program-ROI analysis that redirected quarterly go-to-market strategy, covering <b>140+ converted accounts</b> and <b>$250K+ in revenue</b>.</li>
+                <li>Led the automation of recurring commercial reporting with Excel pivot models and VBA, and delivered a demand forecasting model that <b>lifted capacity planning accuracy by 30%</b> across 3 program lines.</li>
+                <li>Built SQL and Excel reporting on acquisition, pricing and pipeline KPIs; win-rate and lead-behaviour trend analysis informed go-to-market strategy.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item past reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Business Analyst, Bid &amp; Tender Analytics · <span class="co">Metro Security</span></h3>
+                <span class="tl-meta">Apr 2019 – Jul 2021 · Islamabad, Pakistan</span>
+              </div>
+              <p class="tl-sum">Competitive analysis, proposal development and contract management across Fortune 500 and multinational accounts.</p>
+              <ul>
+                <li>Standardized pricing governance across a Fortune 500 tender pipeline, delivering Excel cost models with scenario toggles that set the team's RFP and RFQ methodology, <b>cutting bid-preparation time by 40%</b> and supporting <b>bid wins exceeding $1.2M</b>.</li>
+                <li>Supported final-stage contract negotiations for banking and pharmaceutical accounts, preparing commercial models, scenario analyses and negotiation briefs.</li>
+                <li>Presented weekly pipeline performance metrics to senior leadership to influence go/no-go decisions.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item past reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Procurement Analyst · <span class="co">Schlumberger (SLB)</span></h3>
+                <span class="tl-meta">Jun 2017 – Sep 2017 · Islamabad, Pakistan</span>
+              </div>
+              <p class="tl-sum">Vendor management, sourcing analytics and inventory planning across multi-vendor operations serving regional oilfield projects.</p>
+              <ul>
+                <li>Analyzed multi-vendor sourcing data for a global oilfield services operation lacking competitive benchmarking, evaluating supplier capabilities against technical and commercial criteria to support data-driven vendor selection.</li>
+                <li>Built stock, order and lead-time models to forecast demand and protect on-time delivery of critical materials, reducing supply risk exposure. Internship extended beyond its original term.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item past reveal">
+            <div class="card tl-card">
+              <div class="tl-hd">
+                <h3>Talent Acquisition Analyst, Early Careers · <span class="co">British American Tobacco</span></h3>
+                <span class="tl-meta">Jun 2015 – Oct 2015 · Islamabad, Pakistan</span>
+              </div>
+              <p class="tl-sum">Early careers recruiting operations and employer-brand delivery for a global FMCG.</p>
+              <ul>
+                <li>Analyzed and streamlined early careers operations by managing <b>40 assessment centres, training programs and campus career fairs</b> end to end for a function previously reliant on manual workflows.</li>
+                <li>Defined requirements and evaluated vendors for a centralized candidate database, partnering with an external provider to improve pipeline visibility and hiring data accuracy.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="band" id="education">
+      <div class="wrap">
+        <div class="shead reveal">
+          <span class="eyebrow">Education</span>
+          <h2>Two master's degrees, one analytical spine</h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="card edu reveal">
+            <span class="eyebrow">STEM Designated</span>
+            <h3>M.S. Business Analytics &amp; Information Management</h3>
+            <p class="sch">Purdue University · Mitchell E. Daniels Jr. School of Business</p>
+            <p class="mt">Aug 2025 – Dec 2026 · West Lafayette, IN · Information Management Specialization</p>
+            <p class="cw"><strong style="color:var(--ink-2);font-weight:700">Coursework:</strong> IT Project Management · AI for Business · Foundations of Artificial Intelligence · Spreadsheet Modeling &amp; Monte Carlo Simulation · Statistical Modeling · SQL for Analytics · Machine Learning · Data Management</p>
+          </div>
+
+          <div class="card edu reveal">
+            <span class="eyebrow">Graduate Business</span>
+            <h3>Master of Business Administration</h3>
+            <p class="sch">National University of Sciences and Technology (NUST)</p>
+            <p class="mt">2015 – Dec 2017 · Islamabad, Pakistan · Marketing Management</p>
+            <p class="cw">Graduate business foundation in commercial strategy, market analysis and financial decision-making — the grounding underneath the go-to-market and pricing work that followed.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:36px" class="reveal">
+          <span class="eyebrow">Awards &amp; Certifications</span>
+          <div class="pills" style="margin-top:16px">
+            <span class="pill hi">Edelman Award Winner — Kearney × PepsiCo</span>
+            <span class="pill">CAPM · Certified Associate in Project Management (PMI)</span>
+            <span class="pill">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span>
+            <span class="pill">Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
+            <span class="pill">SAS AI Foundations</span>
+            <span class="pill">SAS SQL Essentials</span>
+            <span class="pill">Dean's Honor List</span>
+            <span class="pill">Chief Editor, University Newspaper</span>
+            <span class="pill">Graduate Women in Business, Purdue</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="band" id="contact">
+      <div class="wrap">
+        <div class="card contact-card reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's talk about your program</h2>
+          <p>Open to project management, program management, technical program management and business analyst roles where delivery discipline and analytical depth sit in the same pair of hands.</p>
+          <div class="clist">
+            <a class="clink" href="mailto:tariq15@purdue.edu"><span class="ic">EMAIL</span> tariq15@purdue.edu</a>
+            <a class="clink" href="tel:+19254968678"><span class="ic">PHONE</span> +1 925-496-8678</a>
+            <a class="clink" href="https://www.linkedin.com/in/saratariq1" target="_blank" rel="noopener"><span class="ic">IN</span> linkedin.com/in/saratariq1</a>
+            <a class="clink" href="https://github.com/Sara-Tariq-5764" target="_blank" rel="noopener"><span class="ic">GH</span> github.com/Sara-Tariq-5764</a>
+          </div>
+          <div style="margin-top:26px">
+            <a class="btn btn-primary" href="assets/SaraTariq_Resume.pdf" download>↓ Download Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <p>© <span id="yr">2026</span> Sara Tariq · West Lafayette, Indiana</p>
+      <p><a href="resume.html">View resume</a> · <a href="projects.html">Project lab</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

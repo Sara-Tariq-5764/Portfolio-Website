@@ -1,0 +1,23 @@
+# Working files that should not be published with the site.
+
+# Full-resolution source images (~8.5 MB) and superseded designs.
+# These stay on your disk and in OneDrive — they are not needed to serve the site,
+# and GitHub Pages would publish anything committed here.
+archive/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Internal working notes — must never be published.
+# CONTENT_SOURCE_MAP.md records sourcing decisions, NDA judgements and
+# resume-title choices. It stays in the private Resume_Optimization folder.
+CONTENT_SOURCE_MAP.md
