@@ -157,6 +157,88 @@
       link: 'assets/Slice_Slice_Baby_Fix_Chatbot_Report.pdf',
       link2: 'https://m.me/846010098599020',
       link2Text: 'Open the bot in Messenger'
+    },
+    {
+      id: 'p-fraud',
+      title: 'Financial Fraud Detection at Scale',
+      subtitle: 'Purdue University · Big Data & MLOps · 2026',
+      cat: 'Big Data & MLOps',
+      stat: '0.946',
+      statLabel: 'Champion AUC-ROC',
+      image: 'assets/project-fraud.jpg',
+      blurb: 'A distributed fraud-detection pipeline on Spark and Databricks — 590K+ transactions, 400+ features, and a champion model at 0.946 AUC-ROC with full experiment tracking and a deployable scoring pipeline.',
+      problem: 'Card fraud is a needle-in-a-haystack problem: roughly 3.5% of the IEEE-CIS dataset is fraudulent, against 96.5% legitimate. A model tuned for overall accuracy scores well by ignoring fraud entirely. The engineering problem is equally hard — 590,540 transactions across two tables, 394 transaction columns and 41 identity columns, many of them mostly null, at a volume where single-machine pandas stops being an option.',
+      method: 'Built the pipeline end to end on PySpark in Databricks. Ingested via Spark with Hive views, LEFT JOIN of transaction and identity tables on TransactionID, deduplication, and a null strategy that dropped columns above 60% missing and median/mode imputed the rest, writing to Parquet and Delta. EDA covered class imbalance, fraud rate by product, device, email domain and hour. Three model families — Logistic Regression, Random Forest and XGBoost with 3-fold GridSearchCV — were trained with every run logged to MLflow, then the champion model, scaler and metadata were written to a Unity Catalog Volume behind a parameterized scoring pipeline.',
+      highlights: [
+        '<b>XGBoost champion at 0.946 AUC-ROC</b>, against 0.916 for Random Forest and 0.778 for Logistic Regression — clearing the 0.90 target set at the outset.',
+        'Tuned for the metric that matters on imbalanced data: <b>AUC-PR 0.675 and recall 0.867</b> at a 0.4 threshold, rather than an accuracy figure the majority class would have flattered.',
+        'Handled scale properly — <b>590K+ rows and 400+ raw features</b> through Spark joins, Delta Lake writes and Unity Catalog paths.',
+        'Closed the MLOps loop: <b>MLflow experiment tracking, model versioning</b>, champion selection, and a widget-driven scoring pipeline another person can run.'
+      ],
+      kpis: [
+        ['0.946', 'champion AUC-ROC'],
+        ['590K+', 'transactions'],
+        ['400+', 'raw features'],
+        ['0.675', 'AUC-PR']
+      ],
+      tags: ['PySpark', 'Databricks', 'Delta Lake', 'Unity Catalog', 'MLflow', 'XGBoost', 'Scikit-learn'],
+      linkText: 'View on GitHub',
+      link: 'https://github.com/Sara-Tariq-5764/Financial-Fraud-Detection-at-Scale'
+    },
+    {
+      id: 'p-eris',
+      title: 'ERIS — Economic Regime Intelligence System',
+      subtitle: 'Purdue University · Machine learning for empirical asset pricing · 2026',
+      cat: 'Predictive Modeling',
+      stat: '94',
+      statLabel: 'Firm Characteristics Modeled',
+      image: 'assets/project-eris.jpg',
+      blurb: 'Return prediction that knows which market it is in — a regime-aware architecture over 94 firm characteristics and 8 macro predictors, validated on expanding windows with no look-ahead bias.',
+      problem: 'Empirical asset-pricing models are usually fitted as though the market has one mode. It does not. A model that predicts excess returns well in a bull market can quietly fail in a bear one, and a single averaged R² hides exactly that. Compounding it, the standard way of evaluating these models leaks future information into training and produces results that cannot be reproduced live.',
+      method: 'Built on the Gu, Kelly and Xiu monthly panel — 94 firm characteristics, 8 macro predictors and industry dummies. Validation is an expanding window: train on everything before month t, predict month t, so no future data reaches the model. Six model families were compared — OLS, Ridge, Random Forest, XGBoost, LightGBM, and a two-headed regime-aware neural network in PyTorch that maps macro variables to a regime embedding and feeds that alongside firm characteristics. Regimes come from an HMM over the macro series, classified Bull, Transition or Bear, with a stress index from term spread, default spread and stock variance. Results are evaluated as a value-weighted decile long–short portfolio and interpreted with SHAP computed separately per regime.',
+      highlights: [
+        'Designed a <b>regime-aware neural network</b> — macro variables become a learned regime embedding that conditions the return prediction, rather than being stirred in as extra features.',
+        'Reported <b>regime-conditional out-of-sample R²</b>, showing performance separately in Bull, Transition and Bear rather than behind a single average.',
+        '<b>Expanding-window validation</b> throughout, so no look-ahead bias enters the reported results.',
+        'Evaluated economically, not just statistically — a <b>decile long–short portfolio</b> with cumulative returns, Sharpe, maximum drawdown and alpha.',
+        'Shipped as a reproducible pipeline with a <b>Streamlit application and a static dashboard</b>, plus SHAP feature importance by regime.'
+      ],
+      kpis: [
+        ['94', 'firm characteristics'],
+        ['8', 'macro predictors'],
+        ['6', 'model families'],
+        ['3', 'detected regimes']
+      ],
+      tags: ['Python', 'PyTorch', 'XGBoost', 'LightGBM', 'Hidden Markov Models', 'SHAP', 'Streamlit'],
+      linkText: 'View on GitHub',
+      link: 'https://github.com/Sara-Tariq-5764/Economic-Regime-Intelligence-System'
+    },
+    {
+      id: 'p-factuality',
+      title: 'AI Factuality Detection for Education',
+      subtitle: 'Data4Good Competition 2025 · Team DataDynasts',
+      cat: 'Predictive Modeling',
+      stat: '0.9354',
+      statLabel: 'Macro-Averaged AUC',
+      image: 'assets/project-factuality.jpg',
+      blurb: 'Classifying AI-generated answers to educational questions as factual, contradictory or irrelevant — a competition entry reaching 0.9354 macro-averaged AUC on five-fold cross-validation.',
+      problem: 'AI tutors state wrong answers with the same confidence as right ones, and in an educational setting a confident hallucination is worse than no answer at all. The task: given a question, its supporting context, and an AI-generated answer, decide whether the answer is factual, contradicts the context, or is simply irrelevant to what was asked — a three-way distinction that surface-level text similarity does not capture.',
+      method: 'Engineered features at three levels rather than relying on a single representation. Semantic: Jaccard overlap and TF-IDF cosine similarity between answer and context, where low similarity is strong evidence of irrelevance or contradiction. Lexical: dual vectorization over both word-level unigrams and bigrams — so that "is not" is distinguishable from "is" — and character-level n-grams. Those fed a HistGradientBoosting and Random Forest ensemble, evaluated with stratified five-fold cross-validation across 21,021 training examples.',
+      highlights: [
+        'Reached <b>0.9354 macro-averaged AUC-ROC</b> on five-fold cross-validation, scored across all three classes rather than the majority one.',
+        'Built <b>multi-level feature engineering</b> — semantic, structural and character-level — because contradiction detection turns on negation and word order that bag-of-words similarity misses.',
+        'Used <b>stratified folds</b> across 21,021 examples so every fold carried a representative share of the rarer classes.',
+        'Delivered <b>2,000 test-set predictions</b> for competition submission from a reproducible training and inference pipeline.'
+      ],
+      kpis: [
+        ['0.9354', 'macro AUC-ROC'],
+        ['21,021', 'training examples'],
+        ['3', 'target classes'],
+        ['5-fold', 'cross-validation']
+      ],
+      tags: ['Python', 'Scikit-learn', 'HistGradientBoosting', 'Random Forest', 'TF-IDF', 'Feature Engineering'],
+      linkText: 'View on GitHub',
+      link: 'https://github.com/Sara-Tariq-5764/AI-Factuality-Detection-ML'
     }
   ];
 
